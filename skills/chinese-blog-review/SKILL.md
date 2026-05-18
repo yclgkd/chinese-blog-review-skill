@@ -29,7 +29,17 @@ Follow the structure and finding format defined in `references/review.md` (Outpu
 - For polishing requests, return the corrected text first and keep changes scoped.
 - For file edits, modify only the relevant text and avoid unrelated formatting churn.
 - For exact upstream wording or version-sensitive questions, fetch the current upstream README before answering.
-- Calibrate review length to article length: short articles (under ~1000 Chinese characters) get at most 5 findings; long articles get at most 12. When over budget, drop low-severity findings first.
+- Calibrate review length by value, not by forcing every dimension:
+  - Report all blocking issues: confirmed factual errors, title/content mismatch, broken core argument, or materially misleading claims.
+  - Keep the count of actionable findings (`严重` / `中等`) within a practical budget:
+    - under ~1000 Chinese characters: usually 5 actionable findings, up to 8 when the article has 2+ blocking issues or title/topic problems that require separate fixes.
+    - 1000-3000 characters: usually 8-12 actionable findings.
+    - 3000-8000 characters: usually 12-18 actionable findings.
+    - over 8000 characters: group findings by the article's original H2 sections when available; usually 18-25 actionable findings total unless the user asks for exhaustive review.
+  - `轻微` findings do not count toward the actionable budget, but should be grouped or omitted unless they meaningfully affect readability.
+  - `事实核查` flags do not count toward the actionable budget, but report only confirmed errors or claims that must be checked before publishing; group related verification concerns.
+  - Repeated copy, punctuation, or wording issues should be reported once with examples, not item by item.
+  - If over budget, drop or merge low-severity findings first; never hide blocking issues just because the budget is full.
 
 ## Source
 
