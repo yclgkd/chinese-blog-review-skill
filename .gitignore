@@ -1,0 +1,19 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+*.log
+dist/
+build/
+coverage/
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local agent configs
+.claude/
+.aider/
+.cursor/

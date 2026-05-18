@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chinese Blog Review Guidelines"
+  short_description: "Review Chinese blog drafts"
+  default_prompt: "Use $chinese-blog-review to review this Chinese blog draft for topic fit, structure, accuracy, fluency, evidence, attribution, and copy formatting."
