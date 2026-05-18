@@ -17,3 +17,5 @@ coverage/
 .claude/
 .aider/
 .cursor/
+.agents/
+skills-lock.json
